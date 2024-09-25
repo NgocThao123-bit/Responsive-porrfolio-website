@@ -1,8 +1,10 @@
 
 
 import './App.css'
+import About from './Components/About/About'
 import Header from './Components/Header/Header.jsx'
 import Nav from './Components/Nav/nav'
+import Services from './Components/Services/Services'
 function App() {
  
 
@@ -10,6 +12,8 @@ function App() {
     <>
      <Nav/>
      <Header/>
+     <About/>
+     <Services/>
     </>
   )
 }
