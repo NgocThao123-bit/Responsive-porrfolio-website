@@ -126,6 +126,9 @@
       justify-content: center;
       align-items: center;
       }
+      .header_image img {
+            width: 70%;
+            }
       
       .header_content{
             width: 100%;
@@ -152,5 +155,18 @@
       #elementImg {
             height: 350px !important;
             width: 350px !important;
+      }
+}
+@media screen and (max-width:500px){
+      .header_image {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      }
+      
+    
+      #elementImg {
+            height: 250px !important;
+            width: 250px !important;
       }
 }

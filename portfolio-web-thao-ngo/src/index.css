@@ -23,7 +23,7 @@
 }
 [data-theme = "Dark"] {
   --text-color: rgba(255,255,255,1);
-  --primary-color: #272730;
+  --primary-color: rgb(110, 78, 242);
   --gradient: linear-gradient(270deg, rgb(110, 78, 242), rgb(86,44,255));
   --bg-color:rgb(28,27,34);
   --invert:100%;
