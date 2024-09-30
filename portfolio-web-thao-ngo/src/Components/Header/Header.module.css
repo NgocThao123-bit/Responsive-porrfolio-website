@@ -87,12 +87,13 @@
 }
 
 #heroImg{
-      width: 80%;
+      width: 50%;
+      height: 100%;
       display: flex;
       justify-content: flex-end;
       z-index: 1;
       position: relative;
-      left: 10%;
+      /* left: 10%; */
 }
 #elementImg {
       position: absolute;
@@ -151,7 +152,11 @@
             height: 40px;
             font-size: 2.5vw !important;
       }
-    
+      #heroImg{
+            width: 100%;
+            height: 100%;
+           
+      }
       #elementImg {
             height: 350px !important;
             width: 350px !important;
@@ -164,7 +169,11 @@
       align-items: center;
       }
       
-    
+      #heroImg{
+            width: 100%;
+            height: 100%;
+           
+      }
       #elementImg {
             height: 250px !important;
             width: 250px !important;

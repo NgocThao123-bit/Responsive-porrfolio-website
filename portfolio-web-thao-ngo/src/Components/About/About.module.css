@@ -30,6 +30,7 @@
 
 .about_img img {
       width: 100%;
+      bottom: 0;
       /* border: 2px solid var(--card-border); */
       position: relative;
       border: none;

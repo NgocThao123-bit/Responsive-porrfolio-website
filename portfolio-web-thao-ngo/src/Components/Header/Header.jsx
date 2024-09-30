@@ -6,7 +6,7 @@ import SoftwareItem3 from './../../assets/brand-3.png'
 import SoftwareItem4 from './../../assets/brand-4.png'
 import SoftwareItem5 from './../../assets/brand-5.png'
 import SoftwareItem6 from './../../assets/brand-6.png'
-import HeroImg from './../../assets/man.png'
+import HeroImg from './../../assets/Girl.png'
 import elementImg from './../../assets/decorate.png'
 export default function Header() {
       return (
@@ -44,7 +44,7 @@ export default function Header() {
                   </div>
                   <div className={headerCSS.header_image}>
                         <img src={HeroImg} alt="hero-image" id={headerCSS.heroImg} />
-                        <img src={elementImg} alt="hero-image" id={headerCSS.elementImg} />
+                        {/* <img src={elementImg} alt="element-image" id={headerCSS.elementImg} /> */}
                   </div>
             </div>
       )
