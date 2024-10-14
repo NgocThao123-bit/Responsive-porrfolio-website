@@ -6,15 +6,19 @@ import SoftwareItem3 from './../../assets/brand-3.png'
 import SoftwareItem4 from './../../assets/brand-4.png'
 import SoftwareItem5 from './../../assets/brand-5.png'
 import SoftwareItem6 from './../../assets/brand-6.png'
-import HeroImg from './../../assets/Girl.png'
-import elementImg from './../../assets/decorate.png'
+import HeroImg from './../../assets/About/about2.png'
+import elementImg from './../../assets/Backgound/rainBow.png'
 export default function Header() {
       return (
-            <div className={headerCSS.header_wrapper}>
+            <section id='header' className={headerCSS.header_wrapper}>
                   <div className={headerCSS.header_content}>
                         <small>Hello✌️ I am Thao</small>
                         <h2> FullStack <span>Software developer</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos error officiis.</p>
+                        <p>I am a junior software developer specialized in ASP.NET,
+                               Blazor, C#, React, Node.js, SQL Server, and Entity Framework. 
+                               I build scalable web applications with a focus on both back-end and 
+                               front-end development. Passionate about learning and improving,
+                               I aim to deliver impactful, user-focused solutions.</p>
                         <div className={headerCSS.header_btns}>
                               <button>Download CV<i className="ri-download-line"></i></button>
                               <button>Hire Me<i className="ri-arrow-right-line"></i></button>
@@ -46,6 +50,6 @@ export default function Header() {
                         <img src={HeroImg} alt="hero-image" id={headerCSS.heroImg} />
                         {/* <img src={elementImg} alt="element-image" id={headerCSS.elementImg} /> */}
                   </div>
-            </div>
+            </section>
       )
 }

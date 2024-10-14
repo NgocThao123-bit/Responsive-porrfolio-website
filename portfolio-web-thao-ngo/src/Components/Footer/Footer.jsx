@@ -1,6 +1,6 @@
 import React from 'react'
 import FooterCSS from '../Footer/Footer.module.css'
-
+import { Link } from 'react-router-dom';
 export default function Footer() {
       return (
             <>
@@ -23,20 +23,20 @@ export default function Footer() {
                               <div className={FooterCSS.links}>
                                     <h3>Useful Links</h3>
                                     <ul>
-                                          <li><a href="#">About</a></li>
-                                          <li><a href="#">Service</a></li>
-                                          <li><a href="#">Project</a></li>
-                                          <li><a href="#">Contact</a></li>
+                                          <li><a href="#about">About</a></li>
+                                          <li><a href="#skills">Skills</a></li>
+                                          <li><a href="#projects">Projects</a></li>
+                                          <li><a href="#contact">Contact</a></li>
                                     </ul>
                               </div>
-                              <div className={FooterCSS.links}>
+                              {/* <div className={FooterCSS.links}>
                                     <h3>Information</h3>
                                     <ul>
                                           <li><a href="#">Membership</a></li>
                                           <li><a href="#">Privacy & Policy</a></li>
                                           <li><a href="#">Terms & Condition</a></li>
                                     </ul>
-                              </div>
+                              </div> */}
                         </div>
                   </section>
             </>

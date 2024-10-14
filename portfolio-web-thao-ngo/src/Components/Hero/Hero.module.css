@@ -1,0 +1,114 @@
+* {
+      margin: 0;
+      padding: 0;
+}
+
+/* {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+} */
+/* body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 4em;
+      color: rgb(242, 227, 227);
+
+} */
+
+.parallax_wrapper {
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      perspective: 300px;
+      /* background-color: aquamarine; */
+
+
+
+}
+
+.intro_screen {
+      height: 100vh;
+      background-color: tomato;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+
+.parallax_group {
+      height: 100vh;
+      position: relative;
+      transform-style: preserve-3d;
+      
+}
+
+.parallax_layer {
+
+      position: absolute;
+      inset: 0;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      
+}
+
+
+.base_layer {
+      /* scale calculation: 1 + ((Z transform value * -1) / perspective) */
+      transform: translateZ(-300px) scale(2);
+      background-image: url(../../assets/Hero/sky.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+}
+
+.mid_layer {
+      transform: translateZ(0);
+      background-image: url(../../assets/Girl.png);
+      background-size: 30%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+}
+
+
+.top_layer {
+      transform: translateZ(-150px) scale(1.5);
+      background-image: url(../../assets/Hero/lawn.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:bottom center;
+      bottom: 0px;
+}
+
+.outro_screen {
+
+      height: 100vh;
+      background-color: teal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#intro {
+z-index: 0;
+}
+
+#group_1{
+z-index: -1;
+}
+
+#group_1 > .base_layer{
+      background-color: rgb(157, 236, 180);
+      
+}
+#group_2{
+
+}
+#group_2 > .mid_layer{
+      background-color: rgb(4, 100, 68);
+}
+#outro{
+grid-template-areas: "stack";
+}
